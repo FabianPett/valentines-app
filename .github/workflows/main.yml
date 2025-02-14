@@ -28,7 +28,7 @@ jobs:
           pyinstaller --onefile --windowed --add-data "love.mp3;." valentines.py
 
       - name: Upload .exe file as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: valentines-executable
           path: dist/valentines.exe
